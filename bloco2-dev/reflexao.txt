@@ -9,6 +9,10 @@
 # No shell moderno, qual mecanismo cumpre papel equivalente?
 
 Resposta:
+No shell moderno, esse papel é feito pelos redirecionamentos
+e pelos pipes do terminal.
+Eles conectam arquivos, comandos e programas usando símbolos
+como >, < e |, igual aconteceu no script relatorio.sh.
 
 # ─────────────────────────────────────────────────────
 
@@ -20,10 +24,17 @@ Resposta:
 #    que não mudou?
 
 Resposta 1:
-
+O make usa as dependências e os timestamps dos arquivos.
+Ele verifica a data da última modificação.
+Se o executável já estiver mais novo que o arquivo fonte,
+ele entende que nada mudou e não recompila.
 
 # 2. O monitor unificava "supervisor, carregador e rotinas de I/O
 #    sob uma interface textual". O que o Makefile unifica no fluxo
 #    de desenvolvimento moderno?
 
 Resposta 2:
+O Makefile unifica várias tarefas do desenvolvimento em um só lugar,
+como compilar programas, executar scripts, gerar relatórios
+e limpar arquivos do projeto.
+Assim o processo fica mais organizado e automático.
